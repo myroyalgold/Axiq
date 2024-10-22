@@ -1,0 +1,165 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  height: 100vh;
+}
+
+/* Left column */
+.col1 {
+  flex: 0 0 75%; /* Flex-grow, flex-shrink, flex-basis */
+  height: 100vh;
+  background-image: url("images/bgg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 10px;
+  color: white;
+  opacity: 1;
+}
+
+.section-one {
+  width: 95%;
+  margin: auto;
+}
+
+/* Right column */
+.col2 {
+  flex: 0 0 25%; /* Flex-grow, flex-shrink, flex-basis */
+  background: white;
+  height: 100vh;
+  padding: 10px;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 900px) {
+  .col1, .col2 {
+    flex: 0 0 100%; /* Full width on smaller screens */
+    height: auto; /* Let height adjust automatically */
+  }
+}
+
+.topnav {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between; /* Justify space between elements */
+}
+
+/* Top nav link */
+.top-nav-link {
+  display: flex;
+  gap: 2rem; /* Reduced gap for smaller screens */
+}
+
+/* Style the topnav links */
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.box1 {
+  padding-top: 20px;
+  padding-left: 1%;
+  margin-top: 10%;
+}
+
+.box1 h1 {
+  font-weight: bold;
+}
+
+.box1 p {
+  margin-top: 10px;
+}
+
+.box2 {
+  padding-top: 30px;
+  padding-left: 5%;
+  margin-top: 20%;
+}
+
+.box2 h3, .box2 p {
+  text-align: left;
+}
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #fff;
+  margin-top: 20px;
+}
+
+.button1:hover {
+  background-color: black;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  margin-top: 20px;
+}
+
+.button2:hover {
+  background-color: black;
+  color: white;
+}
+
+.box2-footer, .box1-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 7em;
+  padding: 30px;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.number {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 0.7em;
+  color: white;
+}
